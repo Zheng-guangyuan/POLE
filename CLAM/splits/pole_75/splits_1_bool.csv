@@ -1,0 +1,148 @@
+,train,val,test
+B2318573-2 #11_17,True,False,False
+B2337974-3#11_18,True,False,False
+B2340214-3#11_28,True,False,False
+B2404461-1#13_21,True,False,False
+"K2103031-1,2#14_25",True,False,False
+"K2103031-3,4#14_24",True,False,False
+"K2103031-7,8#14_22",True,False,False
+"K2103669-1,2#14_10",True,False,False
+"K2103669-3,4#14_9",True,False,False
+"K2103669-5,6#14_8",True,False,False
+"K2103669-9,10#14_6",True,False,False
+K2200642-3 4#12_22,True,False,False
+K2200642-5 6#12_21,True,False,False
+K2200642-7 8#12_20,True,False,False
+K2201770-1 2#12_10,True,False,False
+K2201770-1 2#9_32,True,False,False
+K2201770-11 12#12_13,True,False,False
+K2201770-11 12#9_25,True,False,False
+K2201770-3 4#12_9,True,False,False
+K2201770-3 4#9_33,True,False,False
+K2201770-5 6#12_12,True,False,False
+K2201770-7 8#12_8,True,False,False
+K2201945-11 12#12_3,True,False,False
+K2201945-13 14#12_2,True,False,False
+K2201945-15 16#12_1,True,False,False
+K2201945-3 4#12_7,True,False,False
+K2201945-5 6#12_6,True,False,False
+K2201945-7 8#12_5,True,False,False
+K2201945-9 10#12_4,True,False,False
+K2202988-1 2#11_34,True,False,False
+K2202988-3 4#11_33,True,False,False
+K2202988-5 6#11_32,True,False,False
+K2202988-7 8#11_31,True,False,False
+K2202988-9 10#11_30,True,False,False
+K2203698-1 2#11_6,True,False,False
+K2203698-11 12#11_11,True,False,False
+K2203698-13 14#11_12,True,False,False
+K2203698-3 4#11_7,True,False,False
+K2203698-5 6#11_8,True,False,False
+K2203698-7 8#11_9,True,False,False
+K2203698-9 10#11_10,True,False,False
+K2203813-11 12#11_2,True,False,False
+K2203813-13 14#11_1,True,False,False
+K2203813-5 6#11_5,True,False,False
+K2203813-9 10#11_4,True,False,False
+K2301605-1 2#10_14,True,False,False
+K2301605-3 4#10_13,True,False,False
+K2301605-5 6#10_11,True,False,False
+K2301605-7 8#10_12,True,False,False
+K2301605-9 10#10_10,True,False,False
+K2301846-15 16#9_18,True,False,False
+K2301846-17 18#9_19,True,False,False
+K2301846-19 20#9_20,True,False,False
+K2301846-21 22#9_21,True,False,False
+K2301846-23 24#9_22,True,False,False
+K2301846-25 26#9_23,True,False,False
+K2301846-27 28#9_25,True,False,False
+K2301846-29 30#9_24,True,False,False
+K2301849- 9#9_13,True,False,False
+K2301849-11 12#9_15,True,False,False
+K2301849-13 14#9_14,True,False,False
+K2301849-9 10#9_16,True,False,False
+K2302000-5 6#9_4,True,False,False
+K2302000-7 8#9_3,True,False,False
+K2302100-1 2#1_27,True,False,False
+K2302100-3 4#1_26,True,False,False
+K2302100-5 6#1_25,True,False,False
+K2302100-7 8#1_24,True,False,False
+K2302105-13 14#7_3,True,False,False
+K2302105-15 16#7_2,True,False,False
+K2302105-17 18#7_1,True,False,False
+K2302105-7 8#7_6,True,False,False
+K2302105-9 10#7_5,True,False,False
+K2302139-1 2#6_30,True,False,False
+K2302139-21 22#6_24,True,False,False
+K2302139-3 4#6_29,True,False,False
+K2302139-5 6#6_28,True,False,False
+K2302139-7 8#6_27,True,False,False
+K2302215-1 2#6_13,True,False,False
+K2302215-3 4#6_12,True,False,False
+K2302215-5 6#6_11,True,False,False
+K2302215-7 8#6_10,True,False,False
+B2339536-1#11_24,True,False,False
+B2341327-1#11_31,True,False,False
+B2341994-1#11_33,True,False,False
+B2342006-1#13_1,True,False,False
+B2342925-1#13_5,True,False,False
+B2345897-1#13_15,True,False,False
+B2347868-1#13_17,True,False,False
+B2348252-1#13_18,True,False,False
+HZ234043-120  -HE#14_22,True,False,False
+K2102463#14_4,True,False,False
+K2102463#14_8,True,False,False
+K2203437-13 14#11_18,True,False,False
+K2203437-15 16#11_17,True,False,False
+K2203437-17#11_16,True,False,False
+K2301828-3 4#9_29,True,False,False
+K2301828-5 6#9_28,True,False,False
+K2301828-7 8#9_27,True,False,False
+K2301828-9 10#9_26,True,False,False
+K2301905-11 12#9_5,True,False,False
+K2301905-5 6#9_8,True,False,False
+K2301905-7 8#9_7,True,False,False
+K2301905-9 10#9_6,True,False,False
+K2302013-3 4#1_32,True,False,False
+K2302013-5 6#1_30,True,False,False
+K2302013-7 8#1_29,True,False,False
+K2302013-9 10#1_28,True,False,False
+K2302182-11 12#6_18,True,False,False
+K2302182-15 16#6_16,True,False,False
+K2302182-17 18#6_15,True,False,False
+K2302182-19 20#6_14,True,False,False
+K2302388-15 16#2_4,False,True,False
+K2302388-17 18#2_3,False,True,False
+K2302388-19 20#2_2,False,True,False
+K2302388-21 22#2_1,False,True,False
+K2302495-1 2#1_13,False,True,False
+K2302495-1 2#9_6,False,True,False
+K2302495-3 4#1_14,False,True,False
+K2302495-3 4#9_5,False,True,False
+K2302495-5 6#1_15,False,True,False
+K2302495-5 6#9_4,False,True,False
+K2302495-7 8#1_16,False,True,False
+K2302495-7 8#9_3,False,True,False
+K2302495-9  #1_12,False,True,False
+K2302495-9  #9_7,False,True,False
+K2302495-9 10#9_2,False,True,False
+K2300418-7 8#10_18,False,True,False
+K2300418-7 8#11_28,False,True,False
+B2346277-2#13_16,False,True,False
+K2300766-3 4#10_17,False,True,False
+B2343929-3#13_10,False,False,True
+B2343929-5#13_12,False,False,True
+B2341317-1#11_30,False,False,True
+K2302216-1 2#6_7,False,False,True
+K2302216-11 12#6_4,False,False,True
+K2302216-3 4#6_6,False,False,True
+K2302216-5 6#6_5,False,False,True
+K2302216-7 8#6_3,False,False,True
+K2302216-9 10#6_8,False,False,True
+K2302344-11 12#2_18,False,False,True
+K2302344-13 14#2_17,False,False,True
+K2302344-7 8#2_20,False,False,True
+K2301896-11 12#9_11,False,False,True
+K2301896-13 14#9_12,False,False,True
+K2301896-15 16#9_9,False,False,True
+K2301896-17 18#9_10,False,False,True
