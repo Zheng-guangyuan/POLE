@@ -13,10 +13,10 @@ from tqdm import tqdm  # 导入tqdm用于显示进度条
 # 创建命令行参数解析器
 parser = argparse.ArgumentParser(description='abc')
 # 定义命令行参数：
-# --data_dir: 输入数据目录路径，包含各个slide的子文件夹
-parser.add_argument('--data_dir', default='/data1/guangyuan/pole/data/patches_DTFD_1021/10.0', type=str)
+# --data_dir: 输入数据目录路径
+parser.add_argument('--data_dir', default='/data1/guangyuan/workspace/patches_DTFD_1021/10.0', type=str)
 # --device: 使用的设备，cuda或cpu
-parser.add_argument('--device', default='cuda', type=str)
+parser.add_argument('--device', default='cuda:0', type=str)
 # --num_worker: 数据加载的线程数
 parser.add_argument('--num_worker', default=4, type=int)
 # --crop: 图像中心裁剪尺寸
@@ -24,12 +24,10 @@ parser.add_argument('--crop', default=224, type=int)
 # --batch_size_v: 特征提取的批处理大小
 parser.add_argument('--batch_size_v', default=64, type=int)
 # --log_dir: 特征保存的输出目录
-parser.add_argument('--log_dir', default='/data1/guangyuan/pole/data/features_DTFD_1021', type=str)
+parser.add_argument('--log_dir', default='/data1/guangyuan/workspace/features_DTFD_1023', type=str)
 # --img_resize: 图像初始调整尺寸
 parser.add_argument('--img_resize', default=256, type=int)
 
-# 设置CUDA设备可见性
-os.environ['CUDA_VISIBLE_DEVICES'] = "3"
 
 def main():
     """主函数：执行特征提取的主要流程"""

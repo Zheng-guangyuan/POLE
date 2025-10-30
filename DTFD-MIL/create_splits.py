@@ -4,10 +4,10 @@ import pickle
 import pandas as pd
 
 # 替换为你的.pkl文件路径
-file_path = '/data1/guangyuan/pole/results/feat4DTFD/mDATA_folder'
-save_path = '/data1/guangyuan/pole/results/feat4DTFD/mDATA_train'
+file_path = '/data1/guangyuan/workspace/features_CONCH_1030/'
+save_path = '/data1/guangyuan/workspace/features_CONCH_1030_DTFD'
 # 替换为你的csv文件路径
-df = pd.read_csv('/data1/guangyuan/pole/DTFD-MIL/splits.csv')
+df = pd.read_csv('/data1/guangyuan/workspace/POLE/DTFD-MIL/splits_balance.csv')
 
 # 初始化字典
 mDATA_train = {}
@@ -47,12 +47,13 @@ for slide_file in feature_paths:
         with open(slide_file, 'rb') as file:
             data = pickle.load(file)
         
+        print(f'shape of data from {slide_file}: {data.shape}')
         file_name = os.path.basename(slide_file).split('.')[0]
         
         # 根据您的文件命名格式，可能需要调整slide名称的提取方式
         # 假设pkl文件名格式为 "slide_name.pkl" 或 "slide_name_other_info.pkl"
         # 这里我们直接使用文件名（去掉扩展名）作为slide名称
-        slide_name = file_name
+        slide_name = file_name.split('_')[0]
         
         # 检查slide_name是否在对应的集合中
         matched = False
