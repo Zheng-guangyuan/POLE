@@ -1,0 +1,119 @@
+data: &id003 !!python/object/new:addict.addict.Dict
+  args:
+  - !!python/tuple
+    - dataset_name
+    - camel_data
+  - !!python/tuple
+    - data_shuffle
+    - true
+  - !!python/tuple
+    - data_dir
+    - /data1/guangyuan/workspace/features_DTFD_1023/mDATA_folder/
+  - !!python/tuple
+    - label_dir
+    - dataset_csv/
+  - !!python/tuple
+    - task
+    - pole
+  - !!python/tuple
+    - nfold
+    - 4
+  - !!python/tuple
+    - train_dataloader
+    - &id001 !!python/object/new:addict.addict.Dict
+      args:
+      - !!python/tuple
+        - batch_size
+        - 1
+      - !!python/tuple
+        - num_workers
+        - 8
+      dictitems:
+        batch_size: 1
+        num_workers: 8
+      state: *id001
+  - !!python/tuple
+    - test_dataloader
+    - &id002 !!python/object/new:addict.addict.Dict
+      args:
+      - !!python/tuple
+        - batch_size
+        - 1
+      - !!python/tuple
+        - num_workers
+        - 8
+      dictitems:
+        batch_size: 1
+        num_workers: 8
+      state: *id002
+  dictitems:
+    data_dir: /data1/guangyuan/workspace/features_DTFD_1023/mDATA_folder/
+    data_shuffle: true
+    dataset_name: camel_data
+    label_dir: dataset_csv/
+    nfold: 4
+    task: pole
+    test_dataloader: *id002
+    train_dataloader: *id001
+  state: *id003
+log: !!python/object/apply:pathlib.PosixPath
+- logs
+- TransMIL
+loss: &id005 !!python/object/new:addict.addict.Dict
+  args:
+  - !!python/tuple
+    - base_loss
+    - FocalLoss
+  - !!python/tuple
+    - alpha
+    - &id004
+      - 0.25
+      - 0.75
+  dictitems:
+    alpha: *id004
+    base_loss: FocalLoss
+  state: *id005
+model: &id006 !!python/object/new:addict.addict.Dict
+  args:
+  - !!python/tuple
+    - name
+    - TransMIL
+  - !!python/tuple
+    - n_classes
+    - 2
+  dictitems:
+    n_classes: 2
+    name: TransMIL
+  state: *id006
+optimizer: &id007 !!python/object/new:addict.addict.Dict
+  args:
+  - !!python/tuple
+    - opt
+    - adamw
+  - !!python/tuple
+    - lr
+    - 5.0e-05
+  - !!python/tuple
+    - opt_eps
+    - null
+  - !!python/tuple
+    - opt_betas
+    - null
+  - !!python/tuple
+    - momentum
+    - null
+  - !!python/tuple
+    - weight_decay
+    - 1.0e-05
+  - !!python/tuple
+    - clip_grad_norm
+    - 1.0
+  dictitems:
+    clip_grad_norm: 1.0
+    lr: 5.0e-05
+    momentum: null
+    opt: adamw
+    opt_betas: null
+    opt_eps: null
+    weight_decay: 1.0e-05
+  state: *id007

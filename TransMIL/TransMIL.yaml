@@ -1,0 +1,50 @@
+General:
+    comment: 
+    seed: 42
+    fp16: True
+    amp_level: O2
+    precision: 32 
+    multi_gpu_mode: dp
+    gpus: [2]
+    epochs: &epoch 200 
+    grad_acc: 32     # 梯度累积，累积多个batch后更新模型参数
+    frozen_bn: False
+    patience: 100
+    server: train
+    log_path: logs/
+
+Data:
+    dataset_name: camel_data
+    data_shuffle: True
+    data_dir: /data1/guangyuan/workspace/features_DTFD_1023/mDATA_folder/
+    label_dir: dataset_csv/
+    task: pole_1027_32_adamw
+    nfold: 4
+
+    train_dataloader:
+        batch_size: 1 
+        num_workers: 8
+
+    test_dataloader:
+        batch_size: 1
+        num_workers: 8
+
+Model:
+    name: TransMIL
+    n_classes: 2
+
+
+Optimizer:
+    opt: adamw
+    lr: 0.00001
+    opt_eps: null 
+    opt_betas: null
+    momentum: 0.9 
+    weight_decay: 0.0005
+    clip_grad_norm: 1.0
+
+Loss:
+    base_loss: FocalLoss
+    alpha: [0.35, 0.65]
+
+ 
